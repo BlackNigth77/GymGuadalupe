@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gymguadalupe">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GymGuadalupe"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".HomeAdminActivity"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="Map"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".InfoMembresiasActivity"
+            android:label="Nuestras membresias"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DireccionActivity"
+            android:label="Ubicanos"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ContactanosActivity"
+            android:label="Contactanos"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="Acerca de Nosotros"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegistrarSocioActivity" />
+        <activity
+            android:name=".MembresiaVigenteActivity"
+            android:label="Membresias"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".MembresiaActivity" android:label="Membresias" android:parentActivityName=".HomeAdminActivity" />
+        <activity android:name=".HorariosActivity" android:label="Horarios" android:parentActivityName=".HomeAdminActivity" />
+        <activity
+            android:name=".ListadoObjetivosActivity"
+            android:label="Objetivos"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ReservasActivity"
+            android:label="Reservas"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".OjetivosActivity" />
+        <activity android:name=".PagoMembresiaActivity" />
+        <activity
+            android:name=".SocioActivity"
+            android:label="Socio"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".RegistrarUsuarioActivity"
+            android:label="Usuarios"
+            android:parentActivityName=".AuthActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home"
+            android:parentActivityName=".AuthActivity" />
+        <activity
+            android:name=".AuthActivity"
+            android:label="Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="AppGym">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

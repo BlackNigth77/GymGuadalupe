@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fonini4"
+    android:backgroundTint="@color/black"
+    android:backgroundTintMode="add"
+    tools:context=".MembresiaActivity">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="MANTEMIENTO DE MEMBRESIAS"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="Nombre :"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <EditText
+        android:id="@+id/nombreMEditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="#F4FA00"
+        android:ems="10"
+        android:hint="Anual/Semestral/Trimestral"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gym"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <ImageButton
+        android:id="@+id/btnClear"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_social"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnEliminarMembresia"
+        app:layout_constraintTop_toBottomOf="@+id/costoEMditText"
+        app:srcCompat="@drawable/lim" />
+
+    <ImageButton
+        android:id="@+id/btnAddMembresia"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/button_social"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditarMembresia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costoEMditText"
+        app:srcCompat="@drawable/mas" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:text="Tipo :"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <EditText
+        android:id="@+id/costoEMditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#F4FA00"
+        android:ems="10"
+        android:hint="S/."
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gym"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipoMEditText" />
+
+    <EditText
+        android:id="@+id/tipoMEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#F4FA00"
+        android:ems="10"
+        android:hint="Economica/Clasica/VIP"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gym"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreMEditText" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:text="Costo :"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <ImageButton
+        android:id="@+id/btnEditarMembresia"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/button_social"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnEliminarMembresia"
+        app:layout_constraintStart_toEndOf="@+id/btnAddMembresia"
+        app:layout_constraintTop_toBottomOf="@+id/costoEMditText"
+        app:srcCompat="@drawable/editar" />
+
+    <ImageButton
+        android:id="@+id/btnEliminarMembresia"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/button_social"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnClear"
+        app:layout_constraintStart_toEndOf="@+id/btnEditarMembresia"
+        app:layout_constraintTop_toBottomOf="@+id/costoEMditText"
+        app:srcCompat="@drawable/eliminar" />
+
+    <TextView
+        android:id="@+id/idmembresia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+    <ImageButton
+        android:id="@+id/btnBusqueda"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/button_social"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31"
+        app:srcCompat="@drawable/bus" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:text="User:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtusuarioM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
